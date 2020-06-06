@@ -24,7 +24,7 @@
     <div style="display: none" class="div"></div>
     <div  class="container">
         <div class="pantalla">
-            <form action="/convenios/abonar" style="opacity: 0;pointer-events:none;" class="info_abonar bordeado" method="post">
+            <form action="/Convenios/abonar" style="opacity: 0;pointer-events:none;" class="info_abonar bordeado" method="post">
             @csrf
                 <h3>Abonar a convenio #<input value="34" name="info_abono_id" id="info_abono_id"></h3>
                 <div class="break"></div>
