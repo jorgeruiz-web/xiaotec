@@ -95,7 +95,7 @@ for (let i = 1; i < rows.length; i++) {
         '<div style="width: 10%" class="row_item eliminar"> &times; </div>'+
         '</div>';
         row_selec.className="row quitar";
-        row_selec.setAttribute("style","border-bottom:none;");
+        row_selec.setAttribute("style","border-bottom:none; min-height: 0px; align-items:normal;");
         leer_editores();
         total+=parseInt(precio.split('$')[1]);
         document.querySelector("#total_selec").innerHTML="$"+total;

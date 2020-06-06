@@ -121,7 +121,7 @@
                             <div class="row_tabla">Stock</div>
                         </div>
                         @foreach ($articulos as $art)
-                        <div style="min-height: 0px; align-items:none;" class="row">
+                        <div style="min-height: 0px; align-items:normal;" class="row">
                             <div class="row_tabla"><img src="imagenes/articulos/{{$art['imagen']}}" alt=""></div>
                             <div class="row_tabla cod_pro">{{$art['id_art']}}</div>
                             <div class="row_tabla">{{$art['nombre_art']}}</div>
