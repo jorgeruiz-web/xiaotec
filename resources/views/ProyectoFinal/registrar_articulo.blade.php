@@ -31,7 +31,7 @@
                     @csrf
                     <label for="">Nombre</label>
                     <input type="text" name="nombre_cat" id="">
-                    <button type="submit" style="padding: 4px 7px;" class="boton_agregar">Agregar</button>
+                    <button type="button" style="padding: 4px 7px;" class="boton_agregar">Agregar</button>
                 
                
                 <div class="break"></div>

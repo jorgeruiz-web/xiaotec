@@ -59,6 +59,8 @@ for (let i = 0; i < botones_eliminar.length; i++) {
 
 document.querySelector(".boton_agregar").addEventListener("click",function(){
     document.querySelector("#forma_categoria").setAttribute("action","/registrar_articulo/acciones/?tipo=0");
+    document.querySelector("#forma_categoria").setAttribute("method","POST");
+    document.querySelector("#forma_categoria").submit();
 });
 
 var rol=sessionStorage.getItem("rol");
