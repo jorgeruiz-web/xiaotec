@@ -31,7 +31,7 @@
             <hr>
             <label for=""> <Span id="conf_venta" >Consignar </Span> <span id="conf_total" >$3321</span> al <span id="conf_tipo" >vendedor</span> <span id="conf_vend" >Alicia Castro Felix Mario</span>?</label>
             <div class="break"></div>
-            <form method="POST" action="">
+            <form method="POST" action="/nueva_venta/confirmar">
                 @csrf
                 <input style="display: none;" id="confirmar_tipo_venta" name="confirmar_tipo_venta" type="text">
                 <div class="break"></div>

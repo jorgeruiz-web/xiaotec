@@ -29,7 +29,7 @@ Route::post('/consignacion', 'controlador_ventas@cargar_consignaciones_ver');
 
 Route::get('/nueva_venta', "controlador_ventas@cargar_n_venta");
 
-Route::post('/nueva_venta', "controlador_ventas@nueva_venta");
+Route::post('/nueva_venta/confirmar', "controlador_ventas@nueva_venta");
 
 Route::get('/liquidar_venta', function () {
     return view('ProyectoFinal/liquidar_venta');
