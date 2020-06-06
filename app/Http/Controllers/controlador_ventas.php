@@ -70,7 +70,7 @@ class controlador_ventas extends Controller
         
          $nueva_venta->timestamps = false;
          
-         try {
+        /* try {*/
             $nueva_venta->save();
             $id_venta=($nueva_venta->id_venta);
            
@@ -119,11 +119,11 @@ class controlador_ventas extends Controller
             }
 
             
-         } catch (\Throwable $th) {
+       /*  } catch (\Throwable $th) {
            //  error_log($th);
              articuloscontado::where("id_venta",$id_venta)->delete();
             $nueva_venta->delete();
-         }
+         }*/
             
        
        
