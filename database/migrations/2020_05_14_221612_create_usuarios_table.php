@@ -17,6 +17,8 @@ class CreateUsuariosTable extends Migration
             $table->bigIncrements('id');
             $table->string("usuario",20);
             $table->string("contra",20);
+            $table->string("foto",15);
+            $table->string("rol",10);
         });
     }
 
