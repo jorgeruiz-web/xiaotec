@@ -22,12 +22,13 @@
      include($PATH."cabecera.html");
 
  ?>
-   
-    <div style="margin-left: 130px" class="container">
-        <div class="des_excel">
+   <div class="des_excel">
             
-            <i class="fas fa-file-excel"></i>
-        </div>
+    <i class="fas fa-file-excel"></i>
+    <span style="color: rgb(49, 49, 49); line-height:28px; margin-left:5px;">Descargar reporte</span>
+</div>
+    <div style="margin-left: 130px" class="container">
+        
        <div  class="pantalla">
            <div class="mensaje_eliminar bordeado">
             <h3>¿Eliminar Vendedor <span id="eliminar_nombre">Jorge Luis Ruiz Salazar</span>?</h3>

@@ -288,8 +288,8 @@ button:focus{
 .des_excel
 {
     position: fixed;
-    right: 10px;
-    top: 70px;
+    left: 160px;
+    top: 20px;
     display: flex;
     z-index: 998;
     cursor: pointer;

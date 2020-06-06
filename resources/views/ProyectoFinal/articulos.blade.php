@@ -20,11 +20,13 @@
         include($PATH."cabecera.html");
 
     ?>
-    <div class="container">
-        <div class="des_excel">
+    <div class="des_excel">
             
-            <i class="fas fa-file-excel"></i>
-        </div>
+        <i class="fas fa-file-excel"></i>
+        <span style="color: rgb(49, 49, 49); line-height:28px; margin-left:5px;">Descargar reporte</span>
+    </div>
+    <div class="container">
+        
         <div class="pantalla">
             <div class="edicion">
                 <div class="imagen_edicion">
