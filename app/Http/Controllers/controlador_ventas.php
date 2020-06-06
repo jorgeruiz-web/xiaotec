@@ -413,7 +413,7 @@ class controlador_ventas extends Controller
         
 
 
-          return view("ProyectoFinal/convenios",[
+          return view("ProyectoFinal/Convenios",[
             "convenios_activos"=>$convenios_activos,
             "convenios_finalizados"=>$convenios_finalizados,
             "nombres_activos"=>$nombres_activos,
@@ -455,7 +455,7 @@ class controlador_ventas extends Controller
         }
          
         $abonos_vend=abonos::where('id_convenio',$id_ver)->get();
-         return view("ProyectoFinal/convenios",[
+         return view("ProyectoFinal/Convenios",[
            "convenios_activos"=>$convenios_activos,
            "convenios_finalizados"=>$convenios_finalizados,
            "nombres_activos"=>$nombres_activos,
@@ -490,14 +490,14 @@ class controlador_ventas extends Controller
          $historial->timestamps=false;
          $historial->save();
 
-         return redirect("convenios");
+         return redirect("Convenios");
      }
      public function eliminar_convenio()
      {
          $id_conv=request('id');
          abonos::where('id_convenio',$id_conv)->delete();
          convenios::where('id',$id_conv)->first()->delete();
-         return redirect("convenios");
+         return redirect("Convenios");
 
          $historial=new historial();
          $historial['tipo']="Eliminación de convenio";

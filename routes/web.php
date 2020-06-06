@@ -43,10 +43,10 @@ Route::get('/archivados', 'controlador_ventas@cargar_archivados');
 
 Route::post('/archivados', 'controlador_ventas@archivar_venta');
 
-Route::get('/convenios', "controlador_ventas@cargar_convenios");
-Route::post('/convenios', "controlador_ventas@cargar_convenios_ver");
-Route::post('/convenios/abonar', "controlador_ventas@abonar_convenio");
-Route::post('/convenios/eliminar', "controlador_ventas@eliminar_convenio");
+Route::get('/Convenios', "controlador_ventas@cargar_convenios");
+Route::post('/Convenios', "controlador_ventas@cargar_convenios_ver");
+Route::post('/Convenios/abonar', "controlador_ventas@abonar_convenio");
+Route::post('/Convenios/eliminar', "controlador_ventas@eliminar_convenio");
 
 
 Route::get('/liquidacion', "controlador_ventas@cargar_liquidaciones_fin");
