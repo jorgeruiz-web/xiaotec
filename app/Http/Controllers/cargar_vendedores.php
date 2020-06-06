@@ -62,6 +62,9 @@ class cargar_vendedores extends Controller
         /*NO TERMINADO*/ 
         $vendedor=vendedores::where('id_vend',request('id_vend'))->first();
         $vendedor['nombre_vend']=request('datos_nombre');
+        $vendedor['direccion_vend']=request('datos_direccion');
+        $vendedor['tel_vend']=request('datos_telefono');
+        $vendedor['fecha_nac_vend']=request('datos_fechanac');
         $vendedor->timestamps = false;
         $vendedor->save();
 
