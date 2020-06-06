@@ -75,6 +75,7 @@ Route::post('/articulos','control_articulos@editar_articulo');
 Route::get('/articulos/reporte','control_articulos@descargar_articulos');
 
 Route::post('/registrar_articulo/acciones/', 'control_articulos@editar_categoria');
+Route::get('/registrar_articulo/acciones/', 'control_articulos@editar_categoria');
 
 Route::post('/registrar_articulo','control_articulos@subir_articulo');
 
