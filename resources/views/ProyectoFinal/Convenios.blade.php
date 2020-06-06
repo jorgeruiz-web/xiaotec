@@ -21,6 +21,7 @@
         include($PATH."cabecera.html");
 
     ?>
+    <div style="display: none" class="div"></div>
     <div  class="container">
         <div class="pantalla">
             <form action="/convenios/abonar" style="opacity: 0;pointer-events:none;" class="info_abonar bordeado" method="post">
