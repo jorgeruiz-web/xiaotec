@@ -405,6 +405,7 @@ input:focus
     display: flex;
     flex-wrap: nowrap;
     background-color: var(--filtro);
+    align-items: center;
 }
 .filtro:hover{
     background-color: var(--filtro-hover);

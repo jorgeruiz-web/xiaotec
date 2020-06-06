@@ -21,13 +21,13 @@
             <div class="info">
                  <div class="in">
                      <div class="eff"></div>
-                    <input name="usuario" type="text" placeholder="Nombre de usuario">
+                    <input value="JorgeRuiz" name="usuario" type="text" placeholder="Nombre de usuario">
                 </div>
                 
                 <div class="break"></div>
                 <div class="in">
                      <div class="eff"></div>
-                    <input name="contra" type="password" placeholder="contraseña">
+                    <input value="cuenta123" name="contra" type="password" placeholder="contraseña">
                 </div>
                 
                 <div class="break"></div>
