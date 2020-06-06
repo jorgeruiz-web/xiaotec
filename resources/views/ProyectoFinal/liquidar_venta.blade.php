@@ -12,14 +12,15 @@
 </head>
 <body>
     <?php
-       $PATH= $_SERVER["DOCUMENT_ROOT"]."\Assets/";
-        include($PATH."menu.html");
-        
-    ?>
-     <?php
-        $PATH= $_SERVER["DOCUMENT_ROOT"]."\Assets/";
-        include($PATH."cabecera.html");
-    ?>
+    $PATH= $_SERVER["DOCUMENT_ROOT"]."/Assets/";
+     include($PATH."menu.html");
+     
+ ?>
+  <?php
+     $PATH= $_SERVER["DOCUMENT_ROOT"]."/Assets/";
+     include($PATH."cabecera.html");
+
+ ?>
     @if (empty($id_venta))
         <script>
             window.history.back();

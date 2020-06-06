@@ -12,14 +12,15 @@
 </head>
 <body>
     <?php
-       $PATH= $_SERVER["DOCUMENT_ROOT"]."\Assets/";
-        include($PATH."menu.html");
-        
-    ?>
-     <?php
-        $PATH= $_SERVER["DOCUMENT_ROOT"]."\Assets/";
-        include($PATH."cabecera.html");
-    ?>
+    $PATH= $_SERVER["DOCUMENT_ROOT"]."/Assets/";
+     include($PATH."menu.html");
+     
+ ?>
+  <?php
+     $PATH= $_SERVER["DOCUMENT_ROOT"]."/Assets/";
+     include($PATH."cabecera.html");
+
+ ?>
     <div class="container">
         <div class="titulo_cabecera"><h2 >Inventario</h2></div> 
         <div class="infopadre">

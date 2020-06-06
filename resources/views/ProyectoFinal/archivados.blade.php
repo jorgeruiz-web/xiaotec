@@ -12,12 +12,12 @@
 </head>
 <body>
     <?php
-       $PATH= $_SERVER["DOCUMENT_ROOT"]."\Assets/";
+       $PATH= $_SERVER["DOCUMENT_ROOT"]."/Assets/";
         include($PATH."menu.html");
         
     ?>
      <?php
-        $PATH= $_SERVER["DOCUMENT_ROOT"]."\Assets/";
+        $PATH= $_SERVER["DOCUMENT_ROOT"]."/Assets/";
         include($PATH."cabecera.html");
 
     ?>
