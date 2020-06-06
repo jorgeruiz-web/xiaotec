@@ -30,7 +30,7 @@
                 <form method="POST" id="forma_categoria" action="">
                     @csrf
                     <label for="">Nombre</label>
-                    <input type="text" name="nombre_cat" id="">
+                    <input type="text" name="nombre_cat" id="nombre_cat">
                     <button type="button" style="padding: 4px 7px;" class="boton_agregar">Agregar</button>
                 
                
