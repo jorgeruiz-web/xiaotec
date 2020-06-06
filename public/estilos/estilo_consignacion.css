@@ -1,0 +1,243 @@
+.tabla{
+    background-color: white;
+}
+.ocultar{
+    display: none;
+    padding: 0%;
+    margin: 0;
+}
+.row
+{
+    display: flex;
+}
+.row_item
+{
+    width: 7.5%;
+    text-align: center;
+    justify-content: center;
+}
+.tabla_cabecera{
+    pointer-events: none;
+    font-weight: bold;
+}
+.row_item>form>button{
+    width: 47%;
+    padding: 4px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    color: white;
+    border-radius: 7px;
+
+}
+
+.ver_articulos
+{
+    background-color: green;
+}
+
+
+
+.row_item>form>.btn_liquidar{
+    background-color: var(--boton-aceptar);
+}
+.row_item>form>.btn_editar{
+    background-color: var(--boton-cancelar);
+}
+.row_item>form>.btn_liquidar:hover{
+    background-color: var(--boton-aceptar-hover)
+}
+.row_item>form>.btn_editar:hover{
+    background-color: var(--boton-cancelar-hover);
+}
+.row_item>form{
+    width: 100%;
+}
+.row>.row_item:last-child{
+    font-size: x-large;
+    color: #474747;
+    cursor: pointer;
+}
+.row>.row_item:last-child:hover{
+    color: #000000;
+}
+.detalles
+{
+    background-color: white;
+    width: 50%;
+    position: absolute;
+    min-width: 620px;
+    top: 15%;
+    left: 50%;
+    margin-left: -290px;
+}
+.detalles>button{
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--boton-cancelar);
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+.detalles>button:hover{
+    background-color: var(--boton-cancelar-hover);
+}
+.detalles>.informacion
+{
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.informacion>label{
+    font-weight: bold;
+    margin: 3px 0px;
+}
+.informacion>label>span{
+    font-weight: normal;
+}
+.detalles h2{
+}
+.detalles>.articulos .row_item
+{
+    width: 20%;
+}
+
+.articulos>.total
+{
+    position: absolute;
+    right: 95px;
+    bottom: 5;
+}
+.articulos>.total_articulos
+{
+    position: absolute;
+    right: 31px;
+    bottom: 5;
+    text-align: left;
+    width: 60px;
+}
+.detalles>.articulos{
+    position: relative;
+}
+.pantalla{
+    width: 100%;
+    height: 100%;
+    background-color: var(--pantalla-fondo);
+    position: absolute;
+    top: 0em;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.container>button{
+    padding: 7px;
+    border: none;
+    color: white;
+    background-color: var(--boton-aceptar);
+    border-radius: 7px;
+    font-size: 1.5em;
+    cursor: pointer;
+    width: 100%;
+    transition: all .3s ease;
+    font-weight: bold;
+}
+.container>button:hover{
+    transform: scale(1.01);
+}
+.container>button:hover{
+    background-color: var(--boton-aceptar-hover);
+}
+.filtros
+{
+    width: 100%;
+    background-color: white;
+    margin: 10px 0;
+}
+
+.busqueda{
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 0;
+    width: 100%;
+}
+.busqueda>label, .busqueda>input[type="text"]{
+    display: block;
+    margin-bottom: 10px;
+}
+.busqueda i{
+    position: absolute;
+    bottom: 16;
+    left: 5;
+    color: rgb(146, 146, 146);
+}
+.busqueda button,.filtros_act button{
+    height: 30px;
+    margin-left: 2%;
+    padding: 0 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(52, 159, 201);
+    color: white;
+    cursor: pointer;
+}
+.busqueda .bus:hover{
+    background-color: rgb(44, 129, 163);
+}
+.busqueda>input[type="text"]{
+    padding: 7px;
+    padding-left: 30px;
+    border-radius: 10px;
+    width:50%;
+    border: solid 1px #cccccc;
+}
+.busqueda>.filtros_act>.filtro{
+    background-color: var(--filto);
+    color: white;
+
+}
+.busqueda>.filtros_act>.filtro:hover{
+    background-color:var(--filtro-hover);
+}
+.busqueda>.filtros_act>.filtro:hover>span{
+    text-decoration: underline;
+}
+.busqueda>.filtros_act{
+    margin-left: 7px;
+    width: 400px;
+}
+.filtros_act>.filtro{
+    display: flex;
+    justify-content: space-between;
+    
+    position: relative;
+}
+.filtro>span{
+    
+    display: block;
+    position: absolute;
+    right: 8px;
+    top: 25%;
+}
+input:focus{
+    outline: none;
+}
+.row_item>i{
+    transition: all .3s ease;
+}
+.row_item>i:hover{
+    transform: scale(1.05);
+}
+button
+{
+    transition: all .3s ease;
+
+}
+

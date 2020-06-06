@@ -1,0 +1,250 @@
+.filtrar{
+    background-color: white;
+}
+
+.busqueda{
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 0;
+    width: 100%;
+}
+.busqueda>label, .busqueda>input[type="text"]{
+    display: block;
+    margin-bottom: 10px;
+}
+.busqueda i{
+    position: absolute;
+    bottom: 16;
+    left: 5;
+    color: rgb(146, 146, 146);
+}
+.busqueda button,.filtros_act button{
+    height: 30px;
+    margin-left: 2%;
+    padding: 0 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(52, 159, 201);
+    color: white;
+    cursor: pointer;
+}
+.busqueda .bus:hover{
+    background-color: rgb(44, 129, 163);
+}
+.busqueda>input[type="text"]{
+    padding: 7px;
+    padding-left: 30px;
+    border-radius: 10px;
+    width:50%;
+    border: solid 1px #cccccc;
+}
+.busqueda>.filtros_act>.filtro{
+    background-color: green;
+    color: white;
+    width: auto;
+}
+.busqueda>.filtros_act>.filtro:hover{
+    background-color:var(--boton-cancelar-hover);
+}
+.busqueda>.filtros_act>.filtro:hover>span{
+    text-decoration: underline;
+}
+.busqueda>.filtros_act{
+    margin-left: 7px;
+    width: 400px;
+}
+.filtros_act>.filtro{
+    display: flex;
+    justify-content: space-between;
+    
+    position: relative;
+}
+.filtro>span{
+    
+    display: block;
+    position: absolute;
+    right: 8px;
+    top: 25%;
+}
+input:focus{
+    outline: none;
+}
+.liquidaciones{
+    max-height: 800px;
+    
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.liquidaciones>.tabla>.row>.row_item{
+    width: 18%;
+}
+.liquidaciones>.row>.row_item>button,.boton_ver_liquidaciones{
+    padding: 4px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    color: white;
+    border-radius: 7px;
+}
+.boton_ver
+{
+    margin-right: 2%;
+    background-color: var(--boton-aceptar);
+}
+.boton_ver:hover
+{
+    background-color: var(--boton-aceptar-hover);
+}
+.boton_archivar{
+    background-color: var(--boton-cancelar);
+}
+.boton_archivar:hover{
+    background-color: var(--boton-cancelar-hover);
+}
+.liquidaciones{
+    margin-top: 10px;
+}
+.boton_ver_liquidaciones
+{
+    margin-top: 10px;
+    background-color: var(--boton-aceptar);
+    padding: 4px 10px;
+}
+.boton_ver_liquidaciones:hover
+{
+ background-color: var(--boton-aceptar-hover);
+}
+.boton_ver_liquidaciones>i{
+    transform: translateY(+1px);
+}
+
+.detalles
+{
+    background-color: white;
+    width: 50%;
+    position: absolute;
+    min-width: 620px;
+    top: 15%;
+    left: 50%;
+    margin-left: -290px;
+}
+.detalles>button{
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--boton-cancelar);
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+.detalles>button:hover{
+    background-color: var(--boton-cancelar-hover);
+}
+.detalles>.informacion
+{
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.informacion>label{
+    font-weight: bold;
+}
+.informacion>label>span{
+    font-weight: normal;
+}
+.detalles label{
+    margin: 2px 0;
+}
+.detalles>.articulos .row_item
+{
+    width: 20%;
+}
+.articulos .tabla{
+    padding-bottom: 25px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.articulos>.total_articulos
+{
+    position: absolute;
+    right: 31px;
+    bottom: 5;
+    text-align: left;
+    width: 60px;
+}
+.detalles>.articulos{
+    position: relative;
+}
+.pantalla{
+    width: 100%;
+    height: 100%;
+    background-color: var(--pantalla-fondo);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    pointer-events: none;
+    opacity: 0;
+}
+#forma_id
+{
+    display: none;
+}
+.pantalla>.mensaje_archivar
+{
+    width: 360px;
+    position: absolute;
+    background-color: white;
+    left: 42%;
+    top: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mensaje_archivar>form>button{
+    width: 48%;
+    padding: 4px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    margin-top: 7px;
+}
+.mensaje_archivar>form{
+    display: flex;
+    width: 100%;
+}
+form>button[name="eliminar_cancelar"]
+{
+    background-color: var(--boton-cancelar);
+    margin-right: 2%;
+}
+form>button[name="eliminar_cancelar"]:hover
+{
+    background-color: var(--boton-cancelar-hover);
+}
+form>button[name="eliminar-aceptar"]
+{
+    background-color: var(--boton-aceptar);
+}
+form>button[name="eliminar-aceptar"]:hover
+{
+    background-color: var(--boton-aceptar-hover);
+}
+.mensaje_archivar>i{
+    color: var(--boton-cancelar);
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+input[name="nombre_oculto"]
+{
+    display: none;
+}

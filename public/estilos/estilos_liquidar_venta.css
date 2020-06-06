@@ -1,0 +1,247 @@
+
+.detalles
+{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 100%;
+    
+}
+.detalles>button{
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--boton-cancelar);
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+.detalles>button:hover{
+    background-color: var(--boton-cancelar-hover);
+}
+.detalles>.informacion
+{
+    width: 100%;
+    padding: 10px 0px;
+    padding-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.detalles>.informacion>label{
+    font-weight: bold;
+    margin: 3px 0;
+}
+.detalles>.informacion>label>span{
+    font-weight: normal;
+}
+.detalles>.articulos .row_item
+{
+    width: 14%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.articulos .tabla{
+    padding-bottom: 25px;
+}
+.articulos>.total
+{
+    position: absolute;
+    right: 95px;
+    bottom: 5;
+}
+.articulos>.total_articulos
+{
+    position: absolute;
+    right: 31px;
+    bottom: 5;
+    text-align: left;
+    width: 60px;
+}
+.detalles>.articulos{
+    position: relative;
+    width: 100%;
+}
+
+.row_item>.cant
+{
+    width: 25%;
+    height: 18px;
+    border: 1px solid #cccccc;
+    background-color: white;
+    color: black;
+    text-align: center;
+    align-content: center;
+    font-size: 14px;
+    line-height: 18px;
+}
+.row_item>.editor::selection{
+    background-color: transparent;
+}
+.row_item>.editor{
+    transition: all .1s ease;
+}
+.row_item>.editor:hover{
+    transform: scale(1.05);
+}
+.row{
+    position: relative;
+}
+.row>.total_total
+{
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+
+.info_facturacion
+{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.info_facturacion>h3{
+    margin: 10px 0;
+}
+.info_facturacion>label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#total_facturacion{
+    color: rgb(253, 55, 55);
+    margin-left: 43px;
+}
+#comision_facturacion
+{
+    margin-left: 3px;
+    color: green;
+    border-bottom: solid 1px #cccccc;
+    height: 17px;
+}
+#venta_facturacion
+{
+    color: rgb(0, 0, 0);
+    margin-left: 63px;
+    
+}
+.info_facturacion>label[for="parcial_facturacion"]
+{
+    margin-left: 63px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.info_facturacion>label[for="completa_facturacion"]
+{
+    cursor: pointer;
+}
+.info_facturacion>label>input[type="checkbox"]
+{
+    cursor: pointer;
+}
+#parcial_facturacion,#completa_facturacion
+{
+    transform: translateY(2px);
+}
+.info_facturacion>.abono>input
+{
+    border: none;
+    border-bottom: solid 1px #cccccc;
+    max-width: 65px;
+}
+.abono>span,.abono>label{
+    font-weight: bold;
+}
+.abono>input:focus{
+    outline: none;
+    
+}
+.abono>input{
+    text-align: center;
+    font-size: 16px;
+}
+.abono{
+    max-height: 22px;
+    transition: all .2s ease;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.info_facturacion>button,.mensaje_confirmar>button{
+    width: 49.5%;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+.info_facturacion>#cancelar_facturacion,.mensaje_confirmar>#cancelar_confirmacion
+{
+    background-color: var(--boton-cancelar);
+    margin-right: 1%;
+}
+.info_facturacion>#cancelar_facturacion:hover,.mensaje_confirmar>#cancelar_confirmacion:hover
+{
+    background-color: var(--boton-cancelar-hover);
+}
+.info_facturacion>#aceptar_facturacion,.mensaje_confirmar>#aceptar_confirmacion
+{
+    background-color: var(--boton-aceptar);
+}
+.info_facturacion>#aceptar_facturacion:hover,.mensaje_confirmar>#aceptar_confirmacion:hover
+{
+    background-color: var(--boton-aceptar-hover);
+}
+.pantalla>form>.mensaje_confirmar
+{
+    min-width: 350px;
+    max-width: 500px;
+    position: absolute;
+    background-color: white;
+    left: 28%;
+    top: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pantalla>form>.mensaje_confirmar>label{
+    font-weight: bold;
+    margin-top: 7px;
+}
+.pantalla>form>.mensaje_confirmar>label>span{
+    font-weight: normal;
+}
+.error_parcial
+{
+    background-color: rgb(255, 67, 67);
+    color: white;
+    border-radius: 7px;
+    transform: translateY(-2px);
+    max-height: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    transition: all .2s ease;
+    margin-left: 15px;
+    padding: 0px 15px;
+}
+#confirmar_total,#confirmar_id,#confirmar_tipo,#confirmar_deuda
+{
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    pointer-events: none;
+}
+.articulos_vendidos
+{
+    width: 150px;
+    position: absolute;
+    background-color: #c9c9c9;
+    left: 50%;
+    flex-wrap: wrap;
+    display: flex;
+}
+.articulos_vendidos>input{
+    width: 50%;
+}

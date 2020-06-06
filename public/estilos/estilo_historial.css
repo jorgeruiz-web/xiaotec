@@ -1,0 +1,151 @@
+.row{
+    justify-content: space-between;
+}
+.row_item{
+    align-content: center;
+}
+.cabe{
+    pointer-events: none;
+    font-weight: bold;
+    
+}
+.tabla{
+    position: relative;
+    overflow: hidden;
+}
+
+.acciones{
+    width: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.acciones>h3{
+    margin-top: 5px;
+}
+.acciones>.filtros_1>a{
+    text-decoration: none;
+    color: #505050;
+    margin-right: 35px;
+    margin-top: 5px;
+}
+.acciones>.filtros_1>a:hover{
+    color: #000000;
+}
+.acciones>.filtros_1{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.filtros_1>.filtro_activo
+{
+    border: none;
+    background-color: rgb(33, 201, 33);
+    color: white;
+    padding: 0 10px;  
+    border-radius: 5px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.filtro_activo:hover{
+    background-color:rgb(201, 33, 33);
+}
+.filtro_activo>label{
+    margin-right: 15px;
+    line-height: 20px;
+    pointer-events: none;
+}
+#vaciar{
+    border: 2px solid rgb(201, 33, 33);
+    width: 25px;
+    height: 25px;
+    border-radius: 90px;
+    color:  rgb(201, 33, 33);
+    text-align: center;
+    position: absolute;
+    top: 0em;
+    right: 0;
+    margin: 5px;
+    line-height: 21px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+#vaciar:hover{
+    transform: rotate(180deg);
+}
+.vaciar2{
+    position: absolute;
+    width: 200px;
+    display: block;
+    top: 0em;
+    right: -200px;
+    -webkit-transform:rotate(-180deg);
+    -moz-transform:rotate(-180deg);
+    -o-transform:rotate(-180deg);
+    transform:rotate(-180deg);
+
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+
+.sure{
+    position: fixed;
+    text-align: center;
+    width: 350px;
+    background-color: white;
+    margin-bottom: 15px;
+    z-index: 999;
+    left: 50%;
+    margin-left: -120px;
+    top: 40%;
+}
+.sure i{
+    font-size: 45px;
+    color: var(--boton-cancelar);
+    margin-bottom: 8px;
+}
+.sure label{
+    display: block;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.sure span{
+    display: block;
+}
+.sure button{
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+#borrartodo{
+    background-color: var(--boton-cancelar);
+}
+#cancelar{
+    background-color: var(--boton-aceptar);
+}
+#borrartodo:hover{
+    background-color: var(--boton-cancelar-hover);
+}
+#cancelar:hover{
+    background-color: var(--boton-aceptar-hover);
+}
+.pantalla{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #44444449;
+    
+}
+.actionborrar
+{
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    transition: all .3s ease;
+}

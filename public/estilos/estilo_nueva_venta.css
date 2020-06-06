@@ -1,0 +1,429 @@
+.informacion{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.informacion>label{
+    margin-top: 10px;
+    line-height: 10px;
+    cursor: pointer;
+}
+
+.informacion>label>input[type="checkbox"]{
+    transform: translateY(2px);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.informacion>label:hover>input[type="checkbox"]{
+    transform: scale(1.01);
+}
+.consignacion,.contado
+{
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    transition: all .3s ease;
+    margin-bottom: 10px;
+}
+.infoconsi{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.infoconsi>.tabla{
+    width: 50%;
+    max-height: 380px;
+    overflow-y: scroll;
+}
+.articulos{
+    overflow: hidden;
+}
+.infoarticulos
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 800px; 
+    background-color: white;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+.oculto
+{
+    max-height: 0px;
+    padding: 0;
+}
+.arti_select{
+    width: 53%;
+    margin-right: 1%;
+    height: 300px;
+}
+.seleccionados{
+    width: 46%;
+    height: 500px;
+    overflow-y: scroll; 
+    margin-top: 10px;
+    
+}
+.seleccionados>.tabla{
+    max-height: 450px;
+    overflow-y: scroll; 
+}
+.seleccionados>h4{
+    margin-top: 7px;
+}
+
+
+
+#cancelar,#aceptar{
+    width: 49%;
+    border: none;
+    border-radius: 7px;
+    padding: 7px;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+#aceptar{
+    background-color: var(--boton-aceptar);
+}
+#aceptar:hover{
+    background-color: var(--boton-aceptar-hover);
+}
+#cancelar:hover{
+    background-color: var(--boton-cancelar-hover);
+}
+#cancelar{
+    background-color: var(--boton-cancelar);
+}
+.botones
+{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.infoconsi .row
+{
+    position: relative;
+    cursor: pointer;
+}
+.row_item>.cant
+{
+    width: 50%;
+    height: 18px;
+    border: 1px solid #cccccc;
+    background-color: white;
+    color: black;
+    text-align: center;
+    align-content: center;
+    font-size: 14px;
+    line-height: 18px;
+}
+.eliminar
+{
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease;
+    
+}
+.eliminar:hover{
+    
+    color: #020202;
+    transform: scale(1.2);
+}
+.row>.row_tabla
+{
+    display: flex;
+    width: 25%;
+    max-height: 100%;
+    margin: 0 1%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+.artic>.row{
+    position: relative;
+    transition: all .3s ease;
+    height: auto;
+    
+}
+
+.quitar
+{
+    max-height: 80px;
+    transition: all .3s ease;
+    animation: quit .3s;
+    max-height: 0;
+    pointer-events: none;
+}
+@keyframes quit {
+    from {max-height: 80px;}
+    to {max-height: 0px;}
+  }
+
+.row_tabla>img{
+    height: 80px;
+}
+.artic>.row:hover{
+    background-color: white;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+}
+.infoarticulos>.tabla{
+    width: 53%;
+    margin-right: 1%;
+    max-height: 500px;
+    overflow-y: scroll; 
+    margin-top: 10px;
+}
+.row>i{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    font-size: 24px;
+    margin-top: -12px;
+    color: var(--boton-aceptar);
+    opacity: 0;
+    transition: all .1s ease;
+}
+.row:hover>i{
+    opacity: 1;
+}
+.sel>.row>.row_item a{
+    text-decoration: none;
+    margin-bottom: 1px;
+    font-size: 16px;
+    
+}
+.sel>.row>.row_item input{
+    text-align: center;
+}
+.editor{
+    transition: all .1s ease;
+}
+
+.editor::selection{
+    background-color: transparent;
+}
+.editor:hover{
+    transform: scale(1.05);
+}
+
+.tabla>.mensaje
+{
+    
+    width: 100%;
+    background-color: var(--boton-aceptar);
+    border: none;
+    color: white;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    align-content: center;
+    line-height: 30px;
+    font-size: 20px;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+.quitar_mensaje
+{
+    animation: quit .3s;
+    max-height: 0px;
+    display: none;
+}
+@keyframes quitar_msj {
+    from {max-height: 30px;}
+    to {max-height: 0px;
+        display: none;
+        -webkit-animation-fill-mode: forwards;}
+    
+  }
+.mensaje>i{
+    line-height: 30px;
+}
+
+.consignacion>.tabla{
+    width: 50%;
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.consignacion>.tabla>.row{
+    position: relative;
+}
+.consignacion>.tabla>.row>i{
+    position: absolute;
+}
+.consignacion>.tabla>.row:hover{
+    cursor: pointer;
+}
+.consignacion>.tabla>.row>.row_item{
+    width: 33%;
+    justify-content: center;
+    text-align: center;
+}
+
+.busqueda{
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 0;
+    width: 100%;
+}
+.busqueda>label, .busqueda>input[type="text"]{
+    display: block;
+    margin-bottom: 10px;
+}
+.busqueda i{
+    position: absolute;
+    bottom: 16;
+    left: 5;
+    color: rgb(146, 146, 146);
+}
+.busqueda button{
+    height: 30px;
+    margin-left: 2%;
+    padding: 0 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(52, 159, 201);
+    color: white;
+    cursor: pointer;
+}
+.busqueda .bus:hover{
+    background-color: rgb(44, 129, 163);
+}
+.busqueda>input[type="text"]{
+    padding: 7px;
+    padding-left: 30px;
+    border-radius: 10px;
+    width:50%;
+    border: solid 1px #cccccc;
+}
+
+.infoconta>input{
+    border: solid 1px #cccccc;
+    border-radius: 8px;
+    padding: 7px;
+    width: 40%;
+    margin-left: 5px;
+    transition: all .4s ease;
+}
+.infoconta>input:disabled{
+    width: 0%;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+}
+.infoconta>input:focus{
+    outline: none;
+}
+.infoconta>input>h2{
+    margin-bottom: 10px;
+}
+.infoconta>input>label>input[type="checkbox"]{
+    transform: translateY(2px);
+    margin-left: 10px;
+}
+.infoconta
+{
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.mensaje_confirmar{
+    max-width: 400px;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    margin-left: -235px;
+    top: 34%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.mensaje_confirmar>hr
+{
+    width: 100%;
+    border-bottom: solid .5px #cccccca4;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.mensaje_confirmar>label>#conf_total,.mensaje_confirmar>label>#conf_vend{
+    font-weight: bold;
+}
+.mensaje_confirmar>form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.mensaje_confirmar>form>button{
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    width: 49%;
+    border-radius: 8px;
+    
+    margin-top: 50px;
+    cursor: pointer;
+}
+#conf_cancelar{
+    background-color: var(--boton-cancelar);
+    margin-right: 2%;
+}
+#conf_cancelar:hover{
+    background-color: var(--boton-cancelar-hover);
+}
+#conf_confirmar
+{
+    background-color: var(--boton-aceptar);
+}
+#conf_confirmar:hover
+{
+    background-color: var(--boton-aceptar-hover);
+}
+
+input:focus
+{
+    outline: none;
+}
+.filtro{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: var(--filtro);
+}
+.filtro:hover{
+    background-color: var(--filtro-hover);
+}
+.filtro>span
+{
+position: absolute;
+right: 5px;
+top: 23%;
+}
+label[for="anony"]
+{
+    cursor: pointer;
+}
+label[for="anony"]>input
+{
+    cursor: pointer;
+}
+
+.infoarticulos{
+    background-color: white;
+}

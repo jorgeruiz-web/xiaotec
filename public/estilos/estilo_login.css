@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Lucida Console','Lucida Sans Typewriter','monaco','Bitstream Vera Sans Mono','monospace'; 
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.login
+{
+    width:650px;
+    background-color: white;
+    height: 360px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    overflow: hidden;
+    display: flex;
+}
+.login>.imagen
+{
+    width: 56%;
+    height: 100%;
+}
+.login>form{
+    width: 44%;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+form>.info
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.info>.in{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+}
+.in>.eff
+{
+    width: 4px;
+    height: 53%;
+    background-color: #2facff;
+    position: absolute;
+    left: 5%;
+}
+form h2{
+    color: #585858;
+    font-weight: bold;
+}
+.info>.in>input{
+    width: 90%;
+    margin: 10px 0;
+    padding: 5px;
+    background-color: rgb(233, 233, 233);
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+.imagen>img{
+    width: 100%;
+}
+.info>button{
+    width: 90%;
+    padding: 5px;
+    background-color: #2facff ;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+
+}
+.info>button:hover{
+    background-color: #1ba3fd;
+}
+form .error
+{
+    margin-top: 10px;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 30px;
+    color: white;
+    background-color: rgb(201, 33, 33);
+    text-align: center;
+    line-height: 30px;
+    opacity: 1;
+    transition: all .3s ease;
+}

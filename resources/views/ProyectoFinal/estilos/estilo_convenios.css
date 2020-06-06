@@ -1,0 +1,215 @@
+.tabla>.row>.row_item
+{
+    width: 12%;
+    display: flex;
+}
+.tabla{
+    width: 100%;
+}
+.row_item>button,.info_abonar>button{
+    width: 49%;
+    border-radius: 7px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.row_item>.boton_abonar{
+    background-color: var(--boton-aceptar);
+    margin-right: 2%;
+}
+.row_item>.boton_abonar:hover{
+    background-color: var(--boton-aceptar-hover);
+}
+.row_item>.boton_eliminar{
+    background-color: var(--boton-cancelar);
+}
+.row_item>.boton_eliminar:hover{
+    background-color: var(--boton-cancelar-hover);
+}
+.tabla>h3
+{
+    margin-bottom: 10px;
+}
+.row_item>.boton_ver_abonos{
+    background-color: green;
+}
+.row_item>.boton_ver_abonos:hover{
+    background-color: rgb(0, 160, 0);
+}
+.pantalla>.info_abonar
+{
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pantalla>.info_abonar>label{
+    font-weight: bold;
+}
+.pantalla>.info_abonar>input{
+    border: none;
+    border-bottom: solid 1px #cccccc;
+    width: 60px;
+    outline: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.pantalla>.info_abonar>.porcentajes{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 52%;
+}
+.porcentajes>a{
+    
+    text-decoration: none;
+    color: #5a5a5a;
+}
+.porcentajes>a:hover{
+    color: #000000;
+}
+.porcentajes>a:visited:hover{
+    color: #000000;
+}
+.porcentajes>a:visited{
+    color: #5a5a5a;
+}
+.pantalla>.info_abonar>label,.pantalla>.info_abonar>span{
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.info_cancelar{
+    background-color: var(--boton-cancelar);
+    margin-right: 2%;
+    margin-top: 10px;
+}
+.info_cancelar:hover{
+    background-color: var(--boton-cancelar-hover);
+}
+.info_aceptar{
+    background-color: var(--boton-aceptar);
+    margin-top: 10px;
+}
+.info_aceptar:hover{
+    background-color: var(--boton-aceptar-hover);
+}
+.pantalla>.ver_abonos{
+    width: 400px;
+    min-height: 100px;
+    background-color: white;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+}
+.ver_abonos>.tabla{
+    max-height: 400px;
+
+    overflow-y: scroll;
+}
+.ver_abonos>.tabla>.row>.row_item{
+    width: 33%;
+}
+
+.ver_abonos>h4,.ver_abonos>label{
+    display: block;
+    margin: 7px 0;
+}
+.ver_abonos>.ver_abonos_boton_volver{
+    width: 100%;
+    padding: 4px;
+    background-color: var(--boton-cancelar);
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+.ver_abonos>.ver_abonos_boton_volver:hover{
+    background-color: var(--boton-cancelar-hover);
+}
+
+.convenios_finalizados>.tabla{
+    margin-top: 20px;
+}
+.convenios_finalizados>.tabla>.row>.row_item{
+    width: 20%;
+}
+.convenios_finalizados>h3{display: inline;}
+
+.convenios_finalizados>span{
+    margin-left: 30px;
+    cursor: pointer;
+    color: #616161;
+}
+.convenios_finalizados>span:hover{
+    color: black;
+}
+.convenios_finalizados>span>i{
+    transform: translateY(+2px);
+}
+.convenios_finalizados{
+    background-color: white;
+    overflow: hidden;
+    margin-top: 20px;
+    height: auto;
+}
+.convenios_finalizados>.tabla{
+    transition: all .5s ease;
+    overflow: hidden;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+.oculto{
+    max-height: 0; padding:0; flex-wrap:nowrap;
+}
+.pantalla>.mensaje_eliminar
+{
+    width: 365px;
+    background-color: white;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+.pantalla>.mensaje_eliminar>i{
+    font-size: 40px;
+    color: var(--boton-cancelar);
+    margin: 10px 0;
+}
+.mensaje_eliminar>button{
+    width: 48%;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 7px;
+    font-size: 16px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.mensaje_eliminar>#mensaje_aceptar
+{
+    background-color: var(--boton-aceptar);
+}
+.mensaje_eliminar>#mensaje_aceptar:hover
+{
+    background-color: var(--boton-aceptar-hover);
+}
+.mensaje_eliminar>#mensaje_cancelar
+{
+    background-color: var(--boton-cancelar);
+    margin-right: 2%;
+}
+.mensaje_eliminar>#mensaje_cancelar:hover
+{
+    background-color: var(--boton-cancelar-hover);
+    margin-right: 2%;
+}

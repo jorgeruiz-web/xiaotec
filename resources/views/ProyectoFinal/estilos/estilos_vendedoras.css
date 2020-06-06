@@ -1,0 +1,300 @@
+*{
+    box-sizing: border-box;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
+.tabla,.agregar,.filtros
+{
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+}
+.busqueda{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.busqueda>label, .busqueda>input[type="text"]{
+    display: block;
+    margin-bottom: 10px;
+}
+.busqueda i{
+    position: absolute;
+    bottom: 16;
+    left: 5;
+    color: rgb(146, 146, 146);
+}
+.busqueda button{
+    height: 30px;
+    margin-left: 2%;
+    padding: 0 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(52, 159, 201);
+    color: white;
+    cursor: pointer;
+}
+.busqueda button:hover{
+    background-color: rgb(44, 129, 163);
+}
+.busqueda>input[type="text"]{
+    padding: 7px;
+    padding-left: 30px;
+    border-radius: 10px;
+    border: none;
+    width: 20%;
+}
+.row
+{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    border-bottom: solid 1px #262d373b;
+    
+}
+.row:hover{
+    background-color: #ebebeb;
+    border-left: solid 1px #262d373b;
+    border-right: solid 1px #262d373b;
+}
+.row_item
+{
+    display: flex;
+    width: 23%;
+    height: 100%;
+    margin: 0 1%;
+    align-items: center;
+}
+.row_item span{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.agregar{
+    margin-bottom: 20px;
+}
+.agregar form{
+   
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: all .5s ease;
+    max-height: 400px;
+}
+
+
+.agregar>h3
+{
+    display: inline;
+}
+.agregar>span{
+    margin-left: 30px;
+    color: rgb(90, 90, 90);
+    cursor: pointer;
+}
+.agregar>span:hover{
+    color: rgb(0, 0, 0);
+}
+.agregar>span>i{
+    transform: translateY(+2px);
+}
+
+.agregar>.oculto
+{
+    max-height: 0px;
+}
+
+.filtros
+{
+    display: flex;
+    justify-content: space-between;
+    min-height: 60px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+.filtros a{
+    text-decoration: none;
+    color: #5e5e5e;
+    margin-right:  30px;
+}
+.filtros a:hover{
+    color: black;
+}
+.filtros input{
+    border: none;
+    border-bottom: solid 1px #ccc;
+}
+.filtros input:focus{
+    outline: none;
+}
+.filtros button{
+    background-color: var(--boton-aceptar);
+    padding: 3 10px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 7px;
+    width: 100px;
+    cursor: pointer;
+}
+.filtros button:hover{
+    background-color: var(--boton-aceptar-hover);
+}
+.activo{
+    cursor: pointer;
+    background-color: var(--boton-aceptar);
+    padding: 3px 10px;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    margin-right: 20px;
+    transition: all .2s ease;
+}
+.activo:hover{
+    background-color: var(--boton-cancelar);
+    color: white;
+}
+#filtros_act
+{
+    display: flex;
+}
+.row_item>button{
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    width: 48%;
+    padding: 2px;
+    font-size: 16px;
+}
+.row_item>.editar
+{
+    background-color: var(--boton-aceptar);
+    margin-right: 2%;
+}
+.row_item>.editar:hover
+{
+    background-color: var(--boton-aceptar-hover);
+}
+.row_item>.eliminar
+{
+    background-color: var(--boton-cancelar);
+}
+.row_item>.eliminar:hover
+{
+    background-color: var(--boton-cancelar-hover);
+}
+
+form>.info_labels,form>.info_inputs{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-top: 10px;
+}
+
+form>.info_labels
+{
+    width: 18%;
+}
+form>.info_labels>label
+{
+    margin-bottom: 10px;
+}
+form>.info_inputs
+{
+    width: 78%;
+}
+form>.info_inputs>input{
+    margin-bottom: 10px;
+    width: 50%;
+    border: none;
+    border-bottom: solid 1px #cccccc;
+    font-size: 16px;
+}
+form>.info_inputs>input:focus{
+    outline: none;
+}
+
+form button{
+    width: 50%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 7px;
+    border-radius: 7px;
+    background-color: var(--boton-aceptar);
+    margin-top: 7px;
+}
+form button:hover{
+    background-color: var(--boton-aceptar-hover);
+}
+.pantalla>.mensaje_eliminar
+{
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    left: 30%;
+    top: 15%;
+    position: absolute;
+}
+.pantalla>.mensaje_eliminar>h3{
+    text-align: center;
+}
+.pantalla>.mensaje_eliminar>h3>span{
+    font-weight: normal;
+}
+.pantalla>.mensaje_eliminar>i{
+    color: var(--boton-cancelar);
+    font-size: 45px;
+    margin: 10px 0;
+}
+.mensaje_eliminar>form{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.pantalla>.mensaje_eliminar>form>button{
+    width: 48%;
+    border-radius: 7px;
+    padding: 4px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    margin-top: 7px;
+    font-size: 16px;
+}
+.mensaje_eliminar>form>button[name="eliminar_cancelar"]
+{
+    background-color: var(--boton-cancelar);
+    margin-right: 2%;
+}
+.mensaje_eliminar>form>button[name="eliminar_cancelar"]:hover
+{
+    background-color: var(--boton-cancelar-hover);
+}
+.mensaje_eliminar>form>button[name="eliminar_aceptar"]
+{
+    background-color: var(--boton-aceptar);
+}
+.mensaje_eliminar>form>button[name="eliminar_aceptar"]:hover
+{
+    background-color: var(--boton-aceptar-hover);
+}
+.mensaje_eliminar>form>input{
+    position: absolute;
+    display: none;
+}
+.filtros form{
+    transform: translateY(-5px);
+}
+.filtros form>input
+{
+    font-size: 16px;
+}

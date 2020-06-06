@@ -1,0 +1,25 @@
+.container>button{
+    width: 100%;
+    padding: 8px;
+    color: white;
+    background-color: var(--boton-aceptar);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 0;
+    margin-top: 10px;
+}
+.tabla
+{
+    z-index: 9999;
+}
+.container>button:hover{
+    background-color: var(--boton-aceptar-hover);
+}
+
+.boton_volver
+{
+    margin-top: 15px;
+    cursor: pointer;
+}

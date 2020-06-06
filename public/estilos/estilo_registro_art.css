@@ -1,0 +1,229 @@
+.registro
+{
+    height: 350px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+}
+.registro>.imagen_registro
+{
+    width: 290px;
+    height:290px;
+    border: dashed 2px #cccccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: auto;
+    position: relative;
+    overflow: hidden;
+}
+.registro>.imagen_registro>img{
+    width: 99%;
+    
+    display: none;
+}
+.imagen_registro>label{
+    pointer-events: none;
+}
+.imagen_registro>i{
+    font-size: 60px;
+    color: var(--boton-aceptar);
+}
+#boton_subir_foto{
+    position: absolute;
+    border: none;
+    background-color: var(--boton-cancelar);
+    color: rgb(255, 255, 255);
+    height: 8.2%;
+    width: 290px;
+    font-size: 18px;
+    border-radius: 7px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+button:focus{
+    outline: none;
+}
+#boton_subir_foto:hover,.imagen_registro:hover>button{
+    background-color: var(--boton-cancelar-hover);
+}
+.registro>.info_registro
+{
+    width: 74%;
+    margin-left: 1%;
+    
+}
+.info_registro>form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.info_registro>form>label{
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.info_registro>form>input,.info_registro>form>select{
+    height: 30px;
+    border: none;
+    border-bottom: solid 1px #cccccc;
+    font-size: 16px;
+}
+.info_registro>form>input:focus{
+    outline: none;
+}
+.chico
+{
+    width:15%; 
+    text-align:center;
+}
+.titulo h2{
+    margin-top: 2px;
+}
+.titulo{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.titulo hr{
+    border: .5px solid #cccccc;
+}
+.info_registro>form>label>span{
+    position: absolute;
+    transform: translate(15px,0);
+}
+.info_registro>form>button{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8.6%;
+    background-color: var(--boton-aceptar);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+.info_registro>form>button:hover{
+    background-color: var(--boton-aceptar-hover);
+}
+.info_registro>form{
+    position: relative;
+    height: 100%;
+}
+.imagen_registro>img{
+    position: absolute;
+    max-height: 290px;
+    display: flex;
+    text-align: center;
+}
+.imagen_registro{
+    
+    cursor: pointer;
+}
+.imagen_registro>i
+{
+    transition: all .3s ease;
+}
+.imagen_registro:hover>i{
+    transform: scale(1.15);
+}
+
+select:focus{
+    outline: none;
+}
+.fa-plus-circle
+{
+    font-size: 24px;
+    margin-left: 10px;
+    margin-top: 5px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.fa-plus-circle:hover{
+    transform: scale(1.1);
+}
+.mensaje_categorias
+{
+    position: absolute;
+    width: 400px;
+    background-color: white;
+    left: 30%;
+    top: 20%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mensaje_categorias>form{
+    width: 100%;
+}
+.mensaje_categorias>form>input,.mensaje_categorias>form>label{
+    margin-top: 7px;
+}
+.mensaje_categorias>form>input{
+    margin-left: 10px;
+    border: none;
+    border-bottom: solid 1px #cccccc;
+    font-size: 16px;
+    width: 50%;
+    
+}
+.mensaje_categorias>form>input:focus{
+    outline: none;
+}
+.mensaje_categorias>form>.tabla{
+    box-shadow: none;
+    max-height: 320px;
+    overflow-y: scroll;
+}
+.mensaje_categorias>form>.tabla>.row>.row_item>button,.mensaje_categorias>form>button,.mensaje_categorias>button
+{
+    color: white;
+    border-radius: 7px;
+    padding: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.mensaje_categorias>form>.tabla>.row:hover{
+    background-color: white;
+    border-left: none;
+    border-right: none;
+}
+
+.boton_agregar
+{
+    background-color: var(--boton-aceptar);
+    margin-left: 2px;
+    
+}
+.boton_agregar:hover
+{
+    background-color: var(--boton-aceptar-hover);
+}
+
+.boton_eliminar
+{
+    background-color: var(--boton-cancelar);
+}
+.boton_eliminar:hover{
+    background-color: var(--boton-cancelar-hover);
+}
+
+#mensaje_volver{
+    width: 100%;
+    padding: 7px;
+    background-color: var(--boton-cancelar);
+    margin-top: 10px;
+}
+#mensaje_volver:hover{
+    background-color: var(--boton-cancelar-hover);
+}

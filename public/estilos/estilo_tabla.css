@@ -1,0 +1,39 @@
+.tabla,.agregar,.filtros
+{
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+    padding-bottom: 20px;
+}
+.row
+{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    border-bottom: solid 1px #262d373b;
+    
+}
+.row:hover{
+    background-color: #f7f7f7;
+}
+.row_item
+{
+    display: flex;
+    width: 22%;
+    height: 100%;
+    margin: 0 1%;
+    align-items: center;
+}
+.row_item i,.row_item span{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.tabla_encabezado
+{
+    pointer-events: none;
+    font-weight: bold;
+}
